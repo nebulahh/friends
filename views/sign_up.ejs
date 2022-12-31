@@ -1,0 +1,42 @@
+<%- include('partials/header.ejs') %>
+
+  <main class="container">
+    <div class="row justify-content-center">
+
+      <section class="col-6 mt-5">
+
+        <h1>
+          <%= title %>
+        </h1>
+
+
+        <form action="/signup" method="POST">
+          <div class="mb-3">
+            <label for="first_name" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="first_name" name="first_name">
+          </div>
+
+          <div class="mb-3">
+            <label for="last_name" class="form-label">last Name</label>
+            <input type="text" class="form-control" id="last_name" name="last_name">
+          </div>
+
+          <div class="mb-3">
+            <label for="username" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="username" aria-describedby="emailHelp" name="username">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password">
+          </div>
+          <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </section>
+    </div>
+
+    <%- include('partials/footer.ejs') %>

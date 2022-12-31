@@ -1,0 +1,13 @@
+<%- include('partials/header') -%>
+  <div style="max-width: 50%; margin: 0 auto;">
+    <form action="/post" method="post">
+      <div class="form-group">
+        <label for="post">Message: </label>
+        <textarea name="post" type="textarea" placeholder="Post" name="post" id="post" cols="30" rows="10"
+          class="form-control"></textarea>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+  <%- include('partials/footer') -%>

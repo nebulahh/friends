@@ -1,0 +1,18 @@
+<%- include('partials/header') -%>
+  <%= title %>
+
+    <p>
+      <a href="/join/<%= user._id %> ">Join the club.</a>
+    </p>
+    <p>
+      <a href="/post">Create a new message</a>
+    </p>
+
+    <% if (user) { %>
+      <p>
+        <a href="/logout">log out</a>
+      </p>
+
+      <% } %>
+
+        <%- include('partials/footer') -%>
